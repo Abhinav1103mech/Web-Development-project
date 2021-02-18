@@ -1,0 +1,50 @@
+<%- include("./partials/header")%>
+<style>
+    img {
+        float: left;
+        background-color: white;
+        color: black;
+    }
+
+    .myclass {
+        background-color: rgb(188, 36, 60);
+        color: white;
+    }
+</style>
+<h1 style="color: yellow; text-align: center;"> <%=movie.Title%> </h1>
+<div class="container-fluid">
+    <img src="<%=movie.Poster%>" class="mychange" style="background-color: white; color: black;" alt=<%=movie.Title%>>
+    <p style="float: right;">
+            <h2 style="font-style: oblique;margin-left: 150PX; color: white;">
+                Summary: <%=movie.Plot%>
+            </h2>
+    </p>
+</div>
+<div class="jumbotron" style="clear: both; font-style: italic;">
+       <h2 > Movie INFO </h2>
+        <p class="lead">
+            <ul >
+                <li>Year :<%=movie.Year%></li>
+                <br>
+                <li>Rating :<%=movie.Rated%></li>
+                <br>
+                <li>Realsed date :<%=movie.Released%></li>
+                <br>
+                <li>Movie duration :<%=movie.Runtime%></li>
+                <br>
+                <li>Genre :<%=movie.Genre%></li>
+                <br>
+                <li>Director :<%=movie.Director%></li>
+                <br>
+                <li>Writer :<%=movie.Writer%></li>
+                <br>
+                <li>Actors :<%=movie.Actors%></li>
+                <br>
+                <li>Collection :<%=movie.BoxOffice%></li>
+                <br>
+                <li>Production :<%=movie.Production%></li>
+            </ul>
+        </p>
+</div>
+
+<%- include("./partials/footer")%>
